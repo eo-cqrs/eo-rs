@@ -8,6 +8,7 @@
 <br>
 
 [![maven](https://github.com/eo-cqrs/eo-rs/actions/workflows/mvn.yaml/badge.svg)](https://github.com/eo-cqrs/eo-rs/actions/workflows/mvn.yaml)
+[![codecov](https://codecov.io/gh/eo-cqrs/eo-rs/branch/master/graph/badge.svg?token=rR4PGNZkPm)](https://codecov.io/gh/eo-cqrs/eo-rs)
 
 [![Hits-of-Code](https://hitsofcode.com/github/eo-cqrs/eo-rs)](https://hitsofcode.com/view/github/eo-cqrs/eo-rs)
 [![Lines-of-Code](https://tokei.rs/b1/github/eo-cqrs/eo-rs)](https://github.com/eo-cqrs/eo-rs)
