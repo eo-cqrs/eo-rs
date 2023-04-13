@@ -24,6 +24,12 @@ public final class JsonError implements RsError {
     this.message = msg;
   }
 
+  /**
+   * Ctor.
+   *
+   * @param err The RsError
+   * @see RsError
+   */
   public JsonError(final RsError err) {
     this(err.content());
   }
