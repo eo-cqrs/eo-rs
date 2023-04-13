@@ -42,7 +42,7 @@ final class JsonErrorTest {
     MatcherAssert.assertThat(
       "JSON error in right format",
       err.content(),
-      Matchers.equalTo("{\n\"message\" : \"error code\"\n}\n")
+      Matchers.equalTo("{\"message\":{\"error code\"}")
     );
   }
 
@@ -54,7 +54,7 @@ final class JsonErrorTest {
     MatcherAssert.assertThat(
       "JSON error in right format",
       err.content(),
-      Matchers.equalTo("{\n\"message\" : \"mock message\"\n}\n")
+      Matchers.equalTo("{\"message\":{\"mock message\"}")
     );
   }
 }
