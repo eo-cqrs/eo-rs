@@ -8,6 +8,7 @@
 <br>
 
 [![maven](https://github.com/eo-cqrs/eo-rs/actions/workflows/mvn.yaml/badge.svg)](https://github.com/eo-cqrs/eo-rs/actions/workflows/mvn.yaml)
+[![maven central](http://maven-badges.herokuapp.com/maven-central/io.github.eo-cqrs/eo-rs/badge.svg)](https://search.maven.org/artifact/io.github.eo-cqrs/eo-rs)
 [![codecov](https://codecov.io/gh/eo-cqrs/eo-rs/branch/master/graph/badge.svg?token=rR4PGNZkPm)](https://codecov.io/gh/eo-cqrs/eo-rs)
 
 [![Hits-of-Code](https://hitsofcode.com/github/eo-cqrs/eo-rs)](https://hitsofcode.com/view/github/eo-cqrs/eo-rs)
