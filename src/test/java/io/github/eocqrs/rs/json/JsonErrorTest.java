@@ -20,29 +20,41 @@
  * SOFTWARE.
  */
 
-package io.github.eocqrs.rs;
+package io.github.eocqrs.rs.json;
 
+import io.github.eocqrs.rs.RsError;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
 /**
- * Test case for {@link io.github.eocqrs.rs.RsError.WithCode}.
+ * Test case for {@link JsonError}.
  *
  * @author Aliaksei Bialiauski (abialiauski.dev@gmail.com)
  * @since 0.0.0
  */
-final class WithCodeTest {
+final class JsonErrorTest {
 
   @Test
-  void readsContent() {
-    final RsError error = new RsError.WithCode(
-      "User is not found", 404
-    );
+  void readsRightJson() {
+    final RsError err = new JsonError("error code");
     MatcherAssert.assertThat(
-      "Reads content right",
-      error.content(),
-      Matchers.equalTo("Error code: 404, Message content: User is not found")
+      "JSON error in right format",
+      err.content(),
+      Matchers.equalTo("{\n\"message\" : \"error code\"\n}\n")
+    );
+  }
+
+  @Test
+  void readsWithNestedError() {
+    final RsError mock = Mockito.mock(RsError.class);
+    Mockito.when(mock.content()).thenReturn("mock message");
+    final RsError err = new JsonError(mock);
+    MatcherAssert.assertThat(
+      "JSON error in right format",
+      err.content(),
+      Matchers.equalTo("{\n\"message\" : \"mock message\"\n}\n")
     );
   }
 }
