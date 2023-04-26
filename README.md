@@ -42,11 +42,17 @@ dependencies {
 }
 ```
 
-## Usage
-TBD
-
 ## Example
-TBD
+[JsonError](https://github.com/eo-cqrs/eo-rs/blob/master/src/main/java/io/github/eocqrs/rs/json/JsonError.java) usage:
+```java
+final JsonError json = new JsonError(
+  new RsError.WithCode(
+    "user not found",
+    404
+  )
+);
+final String content = json.content();
+```
 
 ## How to Contribute
 
