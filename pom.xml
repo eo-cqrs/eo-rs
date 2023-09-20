@@ -74,7 +74,7 @@ SOFTWARE.
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <lombok.version>1.18.28</lombok.version>
+    <lombok.version>1.18.30</lombok.version>
     <junit-api.version>5.10.0</junit-api.version>
     <junit-params.version>5.10.0</junit-params.version>
     <assert4j-core.version>3.24.2</assert4j-core.version>
