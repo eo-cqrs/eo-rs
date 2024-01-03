@@ -77,7 +77,7 @@ SOFTWARE.
     <lombok.version>1.18.30</lombok.version>
     <junit-api.version>5.10.0</junit-api.version>
     <junit-params.version>5.10.0</junit-params.version>
-    <assert4j-core.version>3.24.2</assert4j-core.version>
+    <assert4j-core.version>3.25.1</assert4j-core.version>
     <mockito-junit-jupiter.version>5.5.0</mockito-junit-jupiter.version>
     <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
     <maven-verifier-plugin.version>1.1</maven-verifier-plugin.version>
