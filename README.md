@@ -1,3 +1,5 @@
+**This repository is archived, it's successor**: https://github.com/eo-cqrs/eokson
+
 <img alt="logo" src="https://eo-cqrs.github.io/.github/eo-cqrs.svg" height="100px" />
 
 [![Managed By Self XDSD](https://self-xdsd.com/b/mbself.svg)](https://self-xdsd.com/p/eo-cqrs/eo-rs?provider=github)
